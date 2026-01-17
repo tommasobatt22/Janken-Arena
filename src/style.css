@@ -1,5 +1,34 @@
-  canvas {
+@font-face {
+    font-family: 'OffBitTrial'; /* Questo è il nome che userai nel tuo CSS */
+    src: url('/src/font/OffBitTrial-101.ttf') format('woff2');
+    font-weight: 500;
+    font-style: normal; 
+    font-display: swap; 
+}
+
+body{
+  font-family: 'OffBitTrial', sans-serif;
+  
+}
+
+:root{
+  --color-primary: #F99D1B
+}
+canvas {
     width: 100%;
     height: 100%;
     display: block;
   }
+
+  .range-custom {
+    --range-shdw: #F99D1B 
+  }
+
+  .btn-outline.btn-primary{
+    color: var(--color-primary);
+  }
+  .btn-outline.btn-primary:hover{
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
